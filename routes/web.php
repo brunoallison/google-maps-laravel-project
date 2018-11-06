@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MapsController@index')->name('maps.index');
+Route::post('/inserir', 'MapsController@store')->name('maps.store');
